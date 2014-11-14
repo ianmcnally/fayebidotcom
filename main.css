@@ -15,7 +15,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  width: 30rem;
+  width: 32rem;
 }
 
 .flexbox body {
@@ -31,9 +31,9 @@ body {
 }
 
 .flexbox main {
-  -webkit-flex: 0 0 30rem;
-      -ms-flex: 0 0 30rem;
-          flex: 0 0 30rem;
+  -webkit-flex: 0 0 32rem;
+      -ms-flex: 0 0 32rem;
+          flex: 0 0 32rem;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
