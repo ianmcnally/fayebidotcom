@@ -1,18 +1,42 @@
 html {
   font-size: 62.5%;
   background-color: white;
+  height: 100%;
 }
 
 body {
   margin: 0;
   text-align: center;
+  height: 100%;
 }
 
-main {
+.no-flexbox main {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
+  width: 30rem;
+}
+
+.flexbox body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexbox main {
+  -webkit-flex: 0 0 30rem;
+      -ms-flex: 0 0 30rem;
+          flex: 0 0 30rem;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 .name {
