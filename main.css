@@ -143,8 +143,31 @@ i {
   animation: facebook 1s ease-in-out 1 forwards .5s;
 }
 
-@media only screen and (max-width: 375px) {
-  main {
-    width: 99%;
+@-webkit-keyframes fly {
+  0% {
+    transform: translate3d(0, 0, 0);
   }
+  50% {
+    transform: translate3d(0, -5%, 0);
+  }
+  100% {
+    transform: translate3d(0, 5%, 0);
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -5%, 0);
+  }
+  100% {
+    transform: translate3d(0, 5%, 0);
+  }
+}
+
+.twitter-svg:hover #bird{
+  -webkit-animation: fly .5s ease infinite;
+  animation: fly .5s ease infinite;
 }
