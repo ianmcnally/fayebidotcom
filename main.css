@@ -61,7 +61,6 @@ a {
 svg {
   height: 4.5rem;
   width: 4.5rem;
-  fill: #cccccc;
 }
 
 /* icons */
@@ -92,12 +91,8 @@ i {
   background: url("icons/icon-linkedin-s.png");
 }
 
-@keyframes linkedin {
-  0% { fill: #ccc; }
-  100% { fill: #256FBB; }
-}
-
 .linkedin-svg {
+  fill: #256FBB;
   animation: linkedin 1.25s ease-in-out 1 forwards;
 }
 
@@ -110,11 +105,8 @@ i {
   background: url("icons/icon-twitter-s.png");
 }
 
-@keyframes twitter {
-  100% { fill: #29AAE1; }
-}
-
 .twitter-svg {
+  fill: #29AAE1;
   animation: twitter 1s ease-in-out 1 forwards .25s;
 }
 
@@ -143,10 +135,7 @@ i {
   background: url("icons/icon-facebook-s.png");
 }
 
-@keyframes facebook {
-  100% { fill: #293F7E; }
-}
-
 .facebook-svg {
+  fill: #293F7E;;
   animation: facebook 1s ease-in-out 1 forwards .5s;
 }
