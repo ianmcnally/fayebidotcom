@@ -19,24 +19,14 @@ body {
 }
 
 .flexbox body {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .flexbox main {
-  -webkit-flex: 0 0 32rem;
-      -ms-flex: 0 0 32rem;
-          flex: 0 0 32rem;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  flex: 0 0 32rem;
+  align-self: center;
 }
 
 .name {
@@ -73,6 +63,7 @@ svg {
   width: 4.5rem;
   fill: #cccccc;
 }
+
 /* icons */
 i {
   display: inline-block;
@@ -83,28 +74,22 @@ i {
   text-indent: -999rem;
   text-align: left;
 }
+
 .no-inlinesvg svg {
   display: none;
 }
+
 .inlinesvg i {
   display: none;
 }
-.no-inlinesvg .twitter {
-  background: url("icons/icon-twitter.svg"); }
-.no-inlinesvg .linkedin {
-  background: url("icons/icon-linkedin.svg"); }
-.no-inlinesvg .facebook {
-  background: url("icons/icon-facebook.svg"); }
-.no-svg .twitter {
-  background: url("icons/icon-twitter-s.png");}
-.no-svg .linkedin {
-  background: url("icons/icon-linkedin-s.png"); }
-.no-svg .facebook {
-  background: url("icons/icon-facebook-s.png");}
 
-@-webkit-keyframes linkedin {
-  0% { fill: #ccc; }
-  100% { fill: #256FBB; }
+/* LinkedIn */
+.no-inlinesvg .linkedin {
+  background: url("icons/icon-linkedin.svg");
+}
+
+.no-svg .linkedin {
+  background: url("icons/icon-linkedin-s.png");
 }
 
 @keyframes linkedin {
@@ -113,12 +98,16 @@ i {
 }
 
 .linkedin-svg {
-  -webkit-animation: linkedin 1.25s ease-in-out 1 forwards;
   animation: linkedin 1.25s ease-in-out 1 forwards;
 }
 
-@-webkit-keyframes twitter {
-  100% { fill: #29AAE1; }
+/* Twitter */
+.no-inlinesvg .twitter {
+  background: url("icons/icon-twitter.svg");
+}
+
+.no-svg .twitter {
+  background: url("icons/icon-twitter-s.png");
 }
 
 @keyframes twitter {
@@ -126,33 +115,7 @@ i {
 }
 
 .twitter-svg {
-  -webkit-animation: twitter 1s ease-in-out 1 forwards .25s;
   animation: twitter 1s ease-in-out 1 forwards .25s;
-}
-
-@-webkit-keyframes facebook {
-  100% { fill: #293F7E; }
-}
-
-@keyframes facebook {
-  100% { fill: #293F7E; }
-}
-
-.facebook-svg {
-  -webkit-animation: facebook 1s ease-in-out 1 forwards .5s;
-  animation: facebook 1s ease-in-out 1 forwards .5s;
-}
-
-@-webkit-keyframes fly {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(0, -5%, 0);
-  }
-  100% {
-    transform: translate3d(0, 5%, 0);
-  }
 }
 
 @keyframes fly {
@@ -168,6 +131,22 @@ i {
 }
 
 .twitter-svg:hover #bird{
-  -webkit-animation: fly .5s ease infinite;
   animation: fly .5s ease infinite;
+}
+
+/* Facebook */
+.no-inlinesvg .facebook {
+  background: url("icons/icon-facebook.svg");
+}
+
+.no-svg .facebook {
+  background: url("icons/icon-facebook-s.png");
+}
+
+@keyframes facebook {
+  100% { fill: #293F7E; }
+}
+
+.facebook-svg {
+  animation: facebook 1s ease-in-out 1 forwards .5s;
 }
